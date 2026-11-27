@@ -28,8 +28,9 @@ WORKDIR /var/www/html
 COPY . .
 
 RUN composer install --no-dev --optimize-autoloader --no-interaction \
+    && sed -i 's/\r$//' docker-entrypoint.sh \
     && chmod +x docker-entrypoint.sh
 
 EXPOSE 10000
 
-CMD ["./docker-entrypoint.sh"]
+CMD ["sh", "./docker-entrypoint.sh"]
