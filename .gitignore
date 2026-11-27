@@ -1,0 +1,18 @@
+.DS_Store
+Thumbs.db
+
+# Backend
+demafsh-backend/vendor/
+demafsh-backend/node_modules/
+demafsh-backend/.env
+demafsh-backend/storage/*.key
+demafsh-backend/storage/logs/*.log
+demafsh-backend/public/storage
+demafsh-backend/public/hot
+
+# Frontend
+demafsh-frontend/node_modules/
+demafsh-frontend/.next/
+demafsh-frontend/out/
+demafsh-frontend/.env*.local
+demafsh-frontend/npm-debug.log*

@@ -1,0 +1,120 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --bg-deep: #160207;
+  --bg-surface: #2A050E;
+  --bg-card: #4A0B1B;
+  --bg-accent: #6E1127;
+  --text-primary: #F8F5F2;
+  --text-muted: #D4C9C4;
+  --gold-bright: #E7C45B;
+  --gold-muted: #C9A227;
+  --green-accent: #1B6B3A;
+}
+
+@theme inline {
+  --color-maroon-950: #160207;
+  --color-maroon-900: #2A050E;
+  --color-maroon-800: #4A0B1B;
+  --color-maroon-700: #6E1127;
+  --color-cream: #F8F5F2;
+  --color-gold-400: #E7C45B;
+  --color-gold-500: #C9A227;
+  --color-emerald-brand: #1B6B3A;
+  --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #160207;
+  color: #F8F5F2;
+}
+
+body {
+  background-color: #160207;
+  color: #F8F5F2;
+  font-family: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: #E7C45B;
+  color: #160207;
+}
+
+@layer base {
+  a,
+  button,
+  summary,
+  [role="button"],
+  input[type="checkbox"],
+  input[type="radio"],
+  select {
+    cursor: pointer;
+  }
+
+  button:disabled,
+  input:disabled,
+  select:disabled,
+  textarea:disabled {
+    cursor: not-allowed;
+  }
+
+  :focus-visible {
+    outline: 2px solid #E7C45B;
+    outline-offset: 2px;
+  }
+}
+
+.skip-link {
+  position: fixed;
+  top: -120px;
+  left: 1rem;
+  z-index: 100;
+  border-radius: 0.375rem;
+  background-color: #E7C45B;
+  color: #160207;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: top 0.15s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-scroll {
+  animation: marquee-scroll 28s linear infinite;
+}
+
+.animate-marquee-scroll:hover,
+.animate-marquee-scroll:focus-within {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

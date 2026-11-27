@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="maroonBg" x1="12" y1="12" x2="108" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6E1127" />
+      <stop offset="55%" stop-color="#4A0B1B" />
+      <stop offset="100%" stop-color="#160207" />
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="20" y1="20" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E7C45B" />
+      <stop offset="100%" stop-color="#C9A227" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Gold Ring -->
+  <circle cx="60" cy="60" r="57" fill="url(#maroonBg)" stroke="url(#goldAccent)" stroke-width="3" />
+  <circle cx="60" cy="60" r="50" stroke="#C9A227" stroke-opacity="0.45" stroke-width="1" stroke-dasharray="3 3" />
+
+  <!-- Green Heritage 8-Point Star Crest -->
+  <g transform="translate(60 44)">
+    <polygon
+      points="0,-24 6,-6 24,0 6,6 0,24 -6,6 -24,0 -6,-6"
+      fill="#1B6B3A"
+      stroke="#E7C45B"
+      stroke-width="1.5"
+      stroke-linejoin="round"
+    />
+    <polygon
+      points="0,-24 6,-6 24,0 6,6 0,24 -6,6 -24,0 -6,-6"
+      transform="rotate(45)"
+      fill="#1B6B3A"
+      fill-opacity="0.88"
+      stroke="#E7C45B"
+      stroke-width="1.2"
+      stroke-linejoin="round"
+    />
+    <!-- Scales / Balance Motif inside Star -->
+    <line x1="0" y1="-10" x2="0" y2="10" stroke="#F8F5F2" stroke-width="1.6" stroke-linecap="round" />
+    <line x1="-9" y1="-5" x2="9" y2="-5" stroke="#E7C45B" stroke-width="1.6" stroke-linecap="round" />
+    <path d="M-9 -5 L-12 3 Q-9 6 -6 3 Z" fill="#E7C45B" />
+    <path d="M9 -5 L6 3 Q9 6 12 3 Z" fill="#E7C45B" />
+    <line x1="-5" y1="10" x2="5" y2="10" stroke="#E7C45B" stroke-width="1.6" stroke-linecap="round" />
+  </g>
+
+  <!-- Organization Text -->
+  <text
+    x="60"
+    y="83"
+    text-anchor="middle"
+    fill="#F8F5F2"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="13.5"
+    font-weight="700"
+    letter-spacing="1.2"
+  >
+    DEMA FSH
+  </text>
+  <text
+    x="60"
+    y="96"
+    text-anchor="middle"
+    fill="#E7C45B"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="7.5"
+    font-weight="700"
+    letter-spacing="1.6"
+  >
+    UIN SGD BANDUNG
+  </text>
+</svg>
